@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME              => 'Finance::Bank::CooperativeUKPersonal',
-    VERSION           => '0.01',
+    VERSION           => '0.02',
     PREREQ_PM         => {  WWW::Mechanize => 1.64,
                             Crypt::SSLeay => 0.57,
                             File::Temp => 0.22,
