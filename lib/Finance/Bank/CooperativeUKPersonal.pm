@@ -403,14 +403,17 @@ sub statement {
 	
 	# Descend into content, find table containing summary data
 	# 4th or 5th child (table) of <td class="sidebar" width="80%">
+    # remember, we're parsing HTML so may change if Co-op regen the pages
 	my $outerTable;
 	my $innerTable;
 	if ($statement->{name} eq 'Recent Items') {
 		$outerTable = 3;
 		$innerTable = 0;
 	} else {
-		$outerTable = 2;
-		$innerTable = 2;
+        $outerTable = 3;
+        $innerTable = 0;
+		#$outerTable = 2;
+		#$innerTable = 2;
 	}
 	
 	my @transactions;
